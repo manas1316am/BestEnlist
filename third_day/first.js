@@ -1,16 +1,15 @@
 const repeated = (n) => {
     let arr = Array.from(String(n), Number);
+    // length of array
+    let size = arr.length;
     
-
-    for(let i=0; i<arr.length; i++){
-        for(let j=i+1; j<arr.length; j++){
-            if(arr[i] == arr[j]){
-                return "True";
-            } else {
-                return "False";
-            }
-        }
+    if(arr[size-1] === arr[size-2] ){
+        return "True";
     }
+    else {
+        return "False";
+    }
+    
 }
 
-console.log(repeated(3356))
+console.log(repeated(5655))
