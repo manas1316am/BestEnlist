@@ -1,4 +1,4 @@
-var sampleInput = [
+var person = [
   {
     name: "manas",
     age: 20,
@@ -10,10 +10,10 @@ var sampleInput = [
 ];
 
 Array.prototype.beAddObject = function(input) {
-    sampleInput.forEach((item, i) => {
+    person.forEach((item, i) => {
         item.country = input;
     })
-    console.log(sampleInput) 
+    console.log(person) 
 }
 
-sampleInput.beAddObject("India")
+person.beAddObject("India")
